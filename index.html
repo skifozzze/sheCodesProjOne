@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stand with Ukraine</title>
+
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%,
+          rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%);
+      border-radius: 10px;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h2 {
+      text-transform: uppercase;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+      object-fit: cover;
+      max-width: 100%;
+      box-shadow: 10px 5px 5px #ffeb3b8a;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: #244f72;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 30px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: transparent;
+      border: 2px solid #244f72;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .5s;
+      margin-bottom: 20px;
+      box-shadow: 3px 2px 2px #244f72;
+
+    }
+
+    button:hover {
+      color: #244f72;
+      background-color: #ffeb3b8a;
+    }
+
+    .donation {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px;
+      border: 2px dotted #244f72;
+      transition: all .9s;
+    }
+
+    .donation:hover {
+      text-decoration: underline;
+      border: 2px solid #244f72;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      #StandWithUkraine
+    </h1>
+    <h2>
+      we can't be silent
+    </h2>
+    <hr>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/620/original/standwithukraine-jakamo.png?1661517739"
+      alt="ukrain flag" width="500">
+
+    <p>
+      The <strong>Russo-Ukrainian War</strong> is an ongoing war between Russia (together with pro-Russian
+      separatist forces)
+      and
+      Ukraine. It was started by Russia in February 2014 following the Ukrainian Revolution of Dignity, and initially
+      focused on the status of Crimea and the Donbas, internationally recognised as part of Ukraine. The first eight
+      years of
+      the conflict included the Russian annexation of Crimea (2014) and the war in Donbas (2014–2022) between Ukraine
+      and
+      Russian-backed separatists, as well as naval incidents, cyberwarfare, and political tensions. Following a Russian
+      military build-up on the Russia–Ukraine border from late 2021, the conflict expanded significantly when Russia
+      launched <a href="https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine" target="_blank">a full-scale
+        invasion of Ukraine
+        on 24 February 2022</a>
+    </p>
+
+    <button type="submit">support Ukraine</button>
+    <em><a class="donation" href="https://savelife.in.ua/en/donate-en/#donate-army-card-monthly" target="_blank"> MAKE A
+        DONATION
+      </a>
+    </em>
+  </div>
+
+
+  <script>
+    function helpUa() {
+      let name = prompt('What is your name?');
+
+      if (name) {
+        alert(`Hello, ${name}. If you want to support Ukraine, click MAKE A DONATION below`);
+        alert(`Thank you, ${name}`)
+
+      } else {
+        alert('Have a nice day')
+      }
+    }
+
+    let supportButton = document.querySelector('button');
+    supportButton.addEventListener('click', helpUa);
+  </script>
+</body>
+
+</html>
